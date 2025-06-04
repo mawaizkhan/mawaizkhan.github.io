@@ -76,20 +76,21 @@
             align-items: center;
         }
 
-        .logo {
-            font-size: 28px;
-            font-weight: 800;
-            color: white;
-            text-decoration: none;
+        .logo-container {
             display: flex;
             align-items: center;
-            gap: 8px;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
 
-        .logo::before {
-            content: '🤝';
+        .logo-container img {
+            width: 40px; /* adjust size as needed */
+            margin-right: 6px; /* controls spacing between logo and text */
+        }
+
+        .logo {
             font-size: 24px;
+            font-weight: bold;
+            color: #ffffff; /* or your desired color */
+            text-decoration: none;
         }
 
         .nav-links {
@@ -584,20 +585,23 @@
     <div class="gradient-bg">
         <header>
             <nav class="container">
-                <a href="#" class="logo">Our Bill</a>
-                <ul class="nav-links">
-                    <li><a href="#impact">Impact</a></li>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#how-it-works">How It Works</a></li>
-                    <li><a href="#privacy">Privacy</a></li>
-                    <li><a href="signup.html">Signup | Login</a></li>
-                </ul>
+    <div class="logo-container">
+        <img src="logo_main.png" alt="Our Bill Logo">
+        <a href="#" class="logo">Our Bill</a>
+    </div>
+    <ul class="nav-links">
+        <li><a href="#impact">Impact</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#privacy">Privacy</a></li>
+        <li><a href="signup.html">Signup | Login</a></li>
+    </ul>
             </nav>
         </header>
 
         <section class="hero">
             <div class="container">
-                <h1>Direct Impact,<br><span class="highlight">Complete Transparency</span></h1>
+                <h1>Direct Impact,<br><span>Complete Transparency</span></h1>
                 <p>Help families in Pakistan by paying their essential bills directly. See exactly how your donation creates real change while maintaining complete privacy for all involved.</p>
                 <div class="cta-buttons">
                     <a href="signup.html" class="btn btn-primary">💝 Start Donating</a>
@@ -782,7 +786,7 @@
                 
                 <div class="footer-section">
                     <h3>Get Involved</h3>
-                    <p><a href="signup.html">Start Donating</a></p>
+                    <p><a href="#">Start Donating</a></p>
                     <p><a href="#">Volunteer</a></p>
                     <p><a href="#">Corporate Partnerships</a></p>
                 </div>
