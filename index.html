@@ -73,25 +73,6 @@
             padding: 20px;
         }
 
-        .typing-animation {
-            overflow: hidden;
-            border-right: 2px solid #00ff00;
-            white-space: nowrap;
-            animation: typing 3s steps(50, end), blink-caret 0.5s step-end infinite;
-        }
-
-        @keyframes typing {
-            from { width: 0; }
-            to { width: 100%; }
-        }
-
-        @keyframes blink-caret {
-            from, to { border-color: transparent; }
-            50% { border-color: #00ff00; }
-        }
-
-
-
         .profile-header {
             text-align: center;
             margin-bottom: 40px;
@@ -159,7 +140,7 @@
 
         .experience-header {
             display: flex;
-            justify-content: between;
+            justify-content: space-between;
             align-items: flex-start;
             margin-bottom: 10px;
             flex-wrap: wrap;
@@ -331,6 +312,16 @@
             z-index: 1000;
             transition: width 0.3s ease;
         }
+
+        .duty-item {
+            margin-bottom: 8px;
+            padding-left: 10px;
+        }
+
+        .duty-item::before {
+            content: "● ";
+            color: #00ff00;
+        }
     </style>
 </head>
 <body>
@@ -342,15 +333,19 @@
             <div class="terminal-content">
                 <div class="profile-header">
                     <h1 class="profile-name">Muhammad Awaiz Khan</h1>
-                    <p class="profile-title">Threat Detection & Automation Engineer</p>
+                    <p class="profile-title">Threat Detection, Intelligence & Automation Engineer</p>
                     <div class="contact-info">
                         <div class="contact-item">
                             <i class="fas fa-map-marker-alt"></i>
                             <span>Dublin, Ireland</span>
                         </div>
                         <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+353 899581436</span>
+                        </div>
+                        <div class="contact-item">
                             <i class="fas fa-envelope"></i>
-                            <span>m.awaiz.khan@proton.me</span>
+                            <span>ghalibmarxx@gmail.com</span>
                         </div>
                     </div>
                 </div>
@@ -360,10 +355,10 @@
         <div class="section fade-in">
             <h2 class="section-title">
                 <i class="fas fa-terminal"></i>
-                whoami
+                Professional Summary
             </h2>
             <div class="code-block">
-                <p>Accomplished security professional with expertise in threat detection engineering, incident response, and security operations, complemented by strong business acumen. Adept at analyzing threat landscapes to protect critical assets and translating security insights into actionable threat intelligence and threat-hunting strategies. Proficient in automating security processes to enhance efficiency, reduce response times, and improve overall security posture.</p>
+                <p>Accomplished security engineer specializing in detection engineering, automation, and intelligence. Extensive experience in developing and scaling multi-year advanced detection strategies that mitigate insider threats, data loss, and identity-based attacks through automation and intelligence-led engineering. Recognized for driving innovation by leveraging behavioural economics & applications of AI/ML for anomaly detection, threat modelling, and predictive security. An advocate of pragmatic security that minimises friction, enables the business, and delivers quantifiable outcomes in resilience and response.</p>
             </div>
         </div>
 
@@ -372,35 +367,38 @@
                 <i class="fas fa-trophy"></i>
                 Signature Achievements
             </h2>
-             <div class="achievement-item">
-                <p>• <span class="highlight">'KinChain'</span> secured 5th position out of 31 projects submitted for ETH Dublin 2025 with 80+ engineers participating in the hackathon.</p>
+            <div class="achievement-item">
+                <p class="duty-item">Responsibly led a security engineering team of three to implement threat detections and response playbooks, and mapped them with <span class="highlight">MITRE ATT&CK</span> and Cyber Kill Chain for <span class="highlight">60+ critical assets</span></p>
             </div>
             <div class="achievement-item">
-                <p>• Responsibly led a security engineering team of three to implement threat detections and response playbooks, mapped them with <span class="highlight">MITRE ATT&CK</span> and Cyber Kill Chain for <span class="highlight">60+ critical assets</span></p>
+                <p class="duty-item">Built <span class="highlight">AI-powered threat intelligence feeds</span> with automated IOC management, streamlining detection coverage and enabling rapid integration of intelligence into security operations</p>
             </div>
             <div class="achievement-item">
-                <p>• Implemented security controls for <span class="highlight">SOX-Audit</span> within the first year of publicly traded company that are tied to regulatory requirements and critical business processes</p>
+                <p class="duty-item">Developed and implemented <span class="highlight">GenAI Security Strategy</span>, defining controls, guardrails, and detection logic to ensure secure adoption of generative AI technologies across the enterprise</p>
             </div>
             <div class="achievement-item">
-                <p>• Participated in high-risk incidents, where I investigated and developed <span class="highlight">After Action Reviews</span></p>
+                <p class="duty-item">Engineered the <span class="highlight">Security Actions and Incident Response Bots</span> that automated triage and containment workflows, accelerating MTTR and reducing manual analyst workload</p>
             </div>
             <div class="achievement-item">
-                <p>• Led and managed complex cross-functional programs for SOC operation for the launch of <span class="highlight">YAP UAE (FinTech)</span> to ensure it is efficient, accurate and insightful throughout the organization</p>
+                <p class="duty-item">Designed and deployed a <span class="highlight">Security Actions Bot</span> to standardise and orchestrate security responses, improving consistency and efficiency across SOC operations</p>
             </div>
             <div class="achievement-item">
-                <p>• Successfully defended a <span class="highlight">3rd party security audit</span> from RAK Bank for YAP application</p>
+                <p class="duty-item">Implemented security controls for <span class="highlight">SOX-Audit</span> within the first year of a publicly traded company that are tied to regulatory requirements and critical business processes</p>
             </div>
             <div class="achievement-item">
-                <p>• Delivered lighting talks regarding <span class="highlight">cybersecurity awareness</span> throughout the organizations</p>
+                <p class="duty-item">Successfully defended a <span class="highlight">3rd party security audit</span> from RAK Bank for the YAP application</p>
             </div>
             <div class="achievement-item">
-                <p>• Recognized and awarded for acting as a team in the <span class="highlight">Security Engineering Team</span></p>
+                <p class="duty-item">Delivered lighting talks regarding <span class="highlight">cybersecurity awareness</span> throughout the organisation</p>
             </div>
             <div class="achievement-item">
-                <p>• Awarded with the <span class="highlight">Certificate of Appreciation</span> for best performance in the SOC</p>
+                <p class="duty-item">Recognised and awarded for acting as a team in the <span class="highlight">Security Engineering Team</span></p>
             </div>
             <div class="achievement-item">
-                <p>• <span class="highlight">2nd position</span> at Industrial Open-House and Junior Year Robotics Competitions</p>
+                <p class="duty-item">Awarded with the <span class="highlight">Certificate of Appreciation</span> for best performance in the SOC</p>
+            </div>
+            <div class="achievement-item">
+                <p class="duty-item"><span class="highlight">2nd position</span> at Industrial Open-House and Junior Year Robotics Competitions</p>
             </div>
         </div>
 
@@ -419,16 +417,13 @@
                     <div class="duration">February 2025 – Present</div>
                 </div>
                 <div class="code-block">
-                    <p><strong>Notable Projects:</strong> Insider Threat Detection Automation, USB Access Management, IOC Management Automation, AI-Powered Intelligence Feeds</p>
+                    <p><strong>Notable Projects:</strong> GenAI Security Strategy, Insider Threat Detection Automation, USB Access Management, AI-Powered Intelligence Feeds with IOC Management, AI-Powered Autonomous Threat Hunting & Incident Response Bot</p>
                 </div>
-                <p>• Served as SME for detection engineering, specialising in building and optimising threat detections across EDR, SIEM, and CASB platforms to bolster overall security posture and incident readiness</p>
-                <p>• Led initiatives to safeguard customer and employee data by strengthening detection capabilities and security operations</p>
-                <p>• Automated critical security processes using a combination of coded and no-code tools, significantly reducing manual efforts and increasing operational efficiency</p>
-                <p>• Designed and deployed automated threat detection workflows leveraging Slack, Tines, and AI technologies, improving real-time response to insider threats and other critical incidents</p>
-                <p>• Engineered custom automations for USB device access control, ensuring tighter endpoint security</p>
-                <p>• Developed dynamic IOC management automations to continuously enrich blocklists and streamline threat mitigation efforts</p>
-                <p>• Translated complex security data into actionable threat intelligence, driving proactive threat-hunting campaigns and safeguarding critical assets</p>
-                <p>• Provided mentorship and guidance to the SOC team, enhancing their expertise in detection engineering and incident response strategies</p>
+                <div class="duty-item">SME for detection engineering & automation, specialising in building and optimising threat detections across EDR, SIEM, and SASE platforms to bolster overall security posture and incident readiness</div>
+                <div class="duty-item">Automated critical security processes using a combination of coded and no-code tools, significantly reducing manual efforts and increasing operational efficiency</div>
+                <div class="duty-item">Designed and deployed automated threat detection workflows leveraging Slack, Tines, and AI technologies, improving real-time response to insider and other critical threats</div>
+                <div class="duty-item">Translated complex security data into actionable threat intelligence, driving proactive threat-hunting campaigns and safeguarding critical assets</div>
+                <div class="duty-item">Provided mentorship and guidance to the SOC team, enhancing their expertise in detection engineering and incident response strategies</div>
             </div>
 
             <div class="experience-item">
@@ -442,14 +437,14 @@
                 <div class="code-block">
                     <p><strong>Notable Projects:</strong> Threat Detection Management & Lifecycle, SIEM Migration, Endpoint Security Hardening, SOX Controls Implementation, Continuous Onboarding of Assets and Splunk Enrichment</p>
                 </div>
-                <p>• SME for engineering threat detection, incident response controls, detection logic and alert use case management to support end-to-end respective initiatives, i.e SOX, ISO</p>
-                <p>• Calibrated security control systems with the desired risk posture for the enterprise and customers</p>
-                <p>• Automated and optimised security detections to reduce the attack surface, proactively seeking out vulnerabilities, and decreased response and recovery times</p>
-                <p>• Implemented endpoint security protection initiative based on CIS Controls for <span class="highlight">5000+ workstations</span></p>
-                <p>• Served as an escalation point and mentor for the SOC Team</p>
-                <p>• Led and responded to all security events and incidents across complex global infrastructure, services, and applications by taking ownership as an incident commander</p>
-                <p>• Performed After Action Reviews after incident response to reduce risk and prevent a recurrence</p>
-                <p>• Responsibly documented the security engineering projects, developed runbooks, incident playbooks and standard operating procedures to share knowledge across teams</p>
+                <div class="duty-item">SME for engineering threat detection, incident response controls, detection logic and alert use case management to support end-to-end respective initiatives (SOX, ISO)</div>
+                <div class="duty-item">Calibrated security control systems with the desired risk posture for the enterprise and customers</div>
+                <div class="duty-item">Automated and optimised security detections to reduce the attack surface, proactively seeking out vulnerabilities, and decreased response and recovery times</div>
+                <div class="duty-item">Implemented endpoint security protection initiative based on CIS Controls for <span class="highlight">5000+ workstations</span></div>
+                <div class="duty-item">Served as an escalation point and mentor for the SOC Team</div>
+                <div class="duty-item">Led and responded to all security events and incidents across complex global infrastructure, services, and applications by taking ownership as an incident commander</div>
+                <div class="duty-item">Performed After Action Reviews after incident response to reduce risk and prevent a recurrence</div>
+                <div class="duty-item">Responsibly documented the security engineering projects, developed runbooks, incident playbooks and standard operating procedures to share knowledge across teams</div>
             </div>
 
             <div class="experience-item">
@@ -463,11 +458,11 @@
                 <div class="code-block">
                     <p><strong>Notable Projects:</strong> Continuous Detection & Monitoring Operation, Security Incident Management Program, Vulnerability Management Program, Assessments & hardening of Azure & AWS</p>
                 </div>
-                <p>• Primarily responsible for SOC monitoring, detection use-case building, triage, and advisory with a mission to ruthlessly protect our customers' data</p>
-                <p>• Strategised and applied four security initiatives, directing defensive security functions</p>
-                <p>• Implemented and managed the SIEM and EDR solution</p>
-                <p>• Prepared operation reports and followed up with the stakeholders to close the remediation loop</p>
-                <p>• Responded to security events, performed root cause analysis to triage and communicated efficiently to stakeholders</p>
+                <div class="duty-item">Primarily responsible for SOC monitoring, detection use-case building, triage, and advisory with a mission to ruthlessly protect our customers' data</div>
+                <div class="duty-item">Strategised and applied four security initiatives, directing defensive security functions</div>
+                <div class="duty-item">Implemented and managed the SIEM and EDR solution</div>
+                <div class="duty-item">Prepared operation reports and followed up with the stakeholders to close the remediation loop</div>
+                <div class="duty-item">Responded to security events, performed root cause analysis to triage and communicated efficiently with stakeholders</div>
             </div>
 
             <div class="experience-item">
@@ -478,12 +473,12 @@
                     </div>
                     <div class="duration">September 2019 – November 2020</div>
                 </div>
-                <p>• Collaborated closely with Development, Operations, and DevOps teams to integrate security measures into the entire software development lifecycle</p>
-                <p>• Developed security and incident response playbooks tailored to cloud environments to ensure rapid response to security incidents</p>
-                <p>• Analysed anomalous and malicious events from endpoint, network, and application logs</p>
-                <p>• Researched and stayed up-to-date with the latest cloud security threats & technologies</p>
-                <p>• Responded to security events, performed root cause analysis to triage and communicated efficiently to stakeholders</p>
-                <p>• Presented monthly and quarterly SOC reports, including daily detections from all the channels, analysis based on threat hunting, monitoring, recommendations, and the enterprise's security posture</p>
+                <div class="duty-item">Collaborated closely with Development, Operations, and DevOps teams to integrate security measures into the entire software development lifecycle</div>
+                <div class="duty-item">Developed security and incident response playbooks tailored to cloud environments to ensure rapid response to security incidents</div>
+                <div class="duty-item">Analysed anomalous and malicious events from endpoint, network, and application logs</div>
+                <div class="duty-item">Researched and stayed up-to-date with the latest cloud security threats & technologies</div>
+                <div class="duty-item">Responded to security events, performed root cause analysis to triage and communicated efficiently with stakeholders</div>
+                <div class="duty-item">Presented monthly and quarterly SOC reports, including daily detections from all the channels, analysis based on threat hunting, monitoring, recommendations, and the enterprise's security posture</div>
             </div>
         </div>
 
@@ -494,39 +489,40 @@
             </h2>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h4>Security Operations</h4>
+                    <h4>Core Competencies</h4>
                     <ul class="skill-list">
-                        <li>Threat Detection & Response</li>
-                        <li>Security Engineering Operations</li>
-                        <li>Security Incident Management</li>
-                        <li>Threat Hunting and Intelligence</li>
+                        <li>Threat Detection Engineering & Automation</li>
+                        <li>Artificial Intelligence Security</li>
+                        <li>Threat Hunting & Intelligence</li>
+                        <li>Cloud Security Engineering</li>
+                        <li>Security Operations & Response</li>
                     </ul>
                 </div>
                 <div class="skill-category">
-                    <h4>Tools & Platforms</h4>
+                    <h4>Security Tools</h4>
                     <ul class="skill-list">
-                        <li>SIEM: Splunk, Alien Vault, Wazuh, Sumologic</li>
+                        <li>SIEM: Splunk, Anvilogic, Wazuh, Sumologic</li>
                         <li>EDR/MDR: Cortex, CrowdStrike, Kaspersky</li>
-                        <li>Automation: Tines, Slack Bots</li>
-                        <li>WAF: Palo Alto, Cloudflare, Fortinet</li>
+                        <li>SASE: Netskope & Zscaler</li>
+                        <li>Automation: Tines, Slack Bots, AI Agents</li>
+                        <li>WAF: Palo Alto, Cloudflare, Fortinet Firewall</li>
                     </ul>
                 </div>
                 <div class="skill-category">
-                    <h4>Cloud & Infrastructure</h4>
+                    <h4>Infrastructure & Cloud</h4>
                     <ul class="skill-list">
-                        <li>AWS & Azure Security Controls</li>
-                        <li>Linux, Windows, MacOS</li>
-                        <li>Gap Analysis & Detection Logic</li>
-                        <li>Assessments & Hardening</li>
+                        <li>OS: Linux, Windows, MacOS</li>
+                        <li>Cloud Platforms: AWS, Azure</li>
+                        <li>Compliance & Privacy: GDPR</li>
+                        <li>Assessments, Hardening & Recovery Planning</li>
                     </ul>
                 </div>
                 <div class="skill-category">
                     <h4>Frameworks & Programming</h4>
                     <ul class="skill-list">
-                        <li>MITRE ATT&CK, NIST, CIS</li>
-                        <li>SQL, C++, Python</li>
-                        <li>GDPR Compliance</li>
-                        <li>Technical Documentation</li>
+                        <li>Framework: CIS, Cyber KillChain, MITRE, NIST</li>
+                        <li>Programming: SQL, C++ & Python</li>
+                        <li>Technical Documentation & Playbooks</li>
                     </ul>
                 </div>
             </div>
@@ -539,7 +535,7 @@
             </h2>
             <div class="education-item">
                 <div class="degree">International Security & Intelligence</div>
-                <div class="institution">University of Cambridge, England</div>
+                <div class="institution">University of Cambridge</div>
             </div>
             <div class="education-item">
                 <div class="degree">Master of Science, Cyber Security with Threat Management</div>
@@ -559,7 +555,14 @@
             </h2>
             <div class="cert-item">
                 <div>
-                    <div class="cert-name">Cortex XDR - Investigation and Response</div>
+                    <div class="cert-name">Security Cloud Operation & Administration</div>
+                    <div class="cert-org">Netskope</div>
+                </div>
+                <div class="cert-date">July 2025</div>
+            </div>
+            <div class="cert-item">
+                <div>
+                    <div class="cert-name">Cortex XDE - Investigation and Response</div>
                     <div class="cert-org">Palo Alto</div>
                 </div>
                 <div class="cert-date">Aug 2024</div>
@@ -580,7 +583,7 @@
             </div>
             <div class="cert-item">
                 <div>
-                    <div class="cert-name">Administrating Splunk Enterprise Security</div>
+                    <div class="cert-name">Administering Splunk Enterprise Security</div>
                     <div class="cert-org">Splunk</div>
                 </div>
                 <div class="cert-date">May 2023</div>
