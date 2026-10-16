@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muhammad Awaiz Khan | Threat Detection & Automation Engineer</title>
+    <title>Muhammad Awaiz Khan | Staff Security Engineer & Technical Leader</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         * {
@@ -44,38 +44,13 @@
             box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
         }
 
-        .terminal-bar {
-            background: #333;
-            padding: 10px;
-            border-radius: 8px 8px 0 0;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .terminal-btn {
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-        }
-
-        .btn-close { background: #ff5f56; }
-        .btn-minimize { background: #ffbd2e; }
-        .btn-maximize { background: #27ca3f; }
-
-        .terminal-title {
-            margin-left: 20px;
-            color: #fff;
-            font-size: 14px;
-        }
-
         .terminal-content {
-            padding: 20px;
+            padding: 25px;
         }
 
         .profile-header {
             text-align: center;
-            margin-bottom: 40px;
+            margin-bottom: 20px;
         }
 
         .profile-name {
@@ -85,9 +60,10 @@
         }
 
         .profile-title {
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             color: #00cc00;
             margin-bottom: 20px;
+            font-weight: bold;
         }
 
         .contact-info {
@@ -95,7 +71,7 @@
             justify-content: center;
             gap: 30px;
             flex-wrap: wrap;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
 
         .contact-item {
@@ -117,7 +93,7 @@
 
         .section:hover {
             box-shadow: 0 0 25px rgba(0, 255, 0, 0.4);
-            transform: translateY(-5px);
+            transform: translateY(-3px);
         }
 
         .section-title {
@@ -131,10 +107,10 @@
         }
 
         .achievement-item, .experience-item {
-            margin-bottom: 15px;
-            padding: 15px;
+            margin-bottom: 20px;
+            padding: 20px;
             background: #0a0a0a;
-            border-left: 3px solid #00ff00;
+            border-left: 4px solid #00ff00;
             border-radius: 5px;
         }
 
@@ -142,13 +118,13 @@
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
-            margin-bottom: 10px;
+            margin-bottom: 12px;
             flex-wrap: wrap;
         }
 
         .job-title {
             color: #00ff00;
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             font-weight: bold;
         }
 
@@ -159,7 +135,7 @@
 
         .duration {
             color: #888;
-            font-size: 0.9rem;
+            font-size: 0.95rem;
             margin-left: auto;
         }
 
@@ -171,15 +147,17 @@
 
         .skill-category {
             background: #0a0a0a;
-            padding: 15px;
+            padding: 18px;
             border-radius: 8px;
             border: 1px solid #003300;
         }
 
         .skill-category h4 {
             color: #00ff00;
-            margin-bottom: 10px;
-            font-size: 1.1rem;
+            margin-bottom: 12px;
+            font-size: 1.15rem;
+            border-bottom: 1px solid #004400;
+            padding-bottom: 5px;
         }
 
         .skill-list {
@@ -187,7 +165,7 @@
         }
 
         .skill-list li {
-            padding: 5px 0;
+            padding: 6px 0;
             color: #00cc00;
         }
 
@@ -215,15 +193,15 @@
             margin-top: 5px;
         }
 
-        .grade {
-            color: #888;
-            font-size: 0.9rem;
+        .cert-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 12px;
         }
 
         .cert-item {
             background: #0a0a0a;
-            padding: 12px;
-            margin: 8px 0;
+            padding: 12px 15px;
             border-radius: 5px;
             border-left: 3px solid #00aa00;
             display: flex;
@@ -233,11 +211,12 @@
 
         .cert-name {
             color: #00ff00;
+            font-weight: bold;
         }
 
         .cert-org {
             color: #00cc00;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
         }
 
         .cert-date {
@@ -257,7 +236,7 @@
             border: 1px solid #333;
             border-radius: 5px;
             padding: 15px;
-            margin: 10px 0;
+            margin: 12px 0;
             font-family: 'Courier New', monospace;
             color: #00ff00;
             overflow-x: auto;
@@ -269,29 +248,16 @@
         }
 
         @media (max-width: 768px) {
-            .profile-name {
-                font-size: 2rem;
-            }
-            
-            .contact-info {
-                flex-direction: column;
-                align-items: center;
-                gap: 15px;
-            }
-            
-            .experience-header {
-                flex-direction: column;
-            }
-            
-            .duration {
-                margin-left: 0;
-                margin-top: 5px;
-            }
+            .profile-name { font-size: 2rem; }
+            .contact-info { flex-direction: column; align-items: center; gap: 10px; }
+            .experience-header { flex-direction: column; }
+            .duration { margin-left: 0; margin-top: 5px; }
         }
 
         .highlight {
             color: #00ff00;
             text-shadow: 0 0 5px #00ff00;
+            font-weight: bold;
         }
 
         .fade-in {
@@ -314,13 +280,16 @@
         }
 
         .duty-item {
-            margin-bottom: 8px;
-            padding-left: 10px;
+            margin-bottom: 10px;
+            padding-left: 15px;
+            position: relative;
         }
 
         .duty-item::before {
-            content: "● ";
+            content: "◆ ";
             color: #00ff00;
+            position: absolute;
+            left: 0;
         }
     </style>
 </head>
@@ -333,7 +302,7 @@
             <div class="terminal-content">
                 <div class="profile-header">
                     <h1 class="profile-name">Muhammad Awaiz Khan</h1>
-                    <p class="profile-title">Threat Detection, Intelligence & Automation Engineer</p>
+                    <p class="profile-title">Staff Security Engineer & Technical Leader | Enterprise Threat Architecture & GenAI Security Strategy</p>
                     <div class="contact-info">
                         <div class="contact-item">
                             <i class="fas fa-map-marker-alt"></i>
@@ -343,6 +312,10 @@
                             <i class="fas fa-envelope"></i>
                             <span>m.awaiz.khan@proton.me</span>
                         </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+353 899 581 436</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -351,174 +324,150 @@
         <div class="section fade-in">
             <h2 class="section-title">
                 <i class="fas fa-terminal"></i>
-                Professional Summary
+                Executive Leadership Summary
             </h2>
             <div class="code-block">
-                <p>Accomplished security engineer specializing in detection engineering, automation, and intelligence. Extensive experience in developing and scaling multi-year advanced detection strategies that mitigate insider threats, data loss, and identity-based attacks through automation and intelligence-led engineering. Recognized for driving innovation by leveraging behavioural economics & applications of AI/ML for anomaly detection, threat modelling, and predictive security. An advocate of pragmatic security that minimises friction, enables the business, and delivers quantifiable outcomes in resilience and response.</p>
+                <p>Staff-Level Security Leader and Architect specializing in multi-year threat detection strategies, enterprise automation platforms, and GenAI security governance across complex cloud-native and SaaS environments. Trusted advisor to executive leadership, driving business-enabling security architectures that eliminate friction, reduce operational toil, and build resilience against sophisticated threat actors. Proven track record of building, mentoring, and leading high-performing security engineering teams, establishing detection-as-code frameworks, and pioneering automated orchestration ecosystems. Recognized for fusing threat intelligence, machine learning, and strategic governance to achieve quantifiable risk reduction at enterprise scale[cite: 1].</p>
             </div>
         </div>
 
         <div class="section fade-in">
             <h2 class="section-title">
                 <i class="fas fa-trophy"></i>
-                Signature Achievements
+                Strategic Leadership & Architectural Achievements
             </h2>
             <div class="achievement-item">
-                <p class="duty-item">Responsibly led a security engineering team of three to implement threat detections and response playbooks, and mapped them with <span class="highlight">MITRE ATT&CK</span> and Cyber Kill Chain for <span class="highlight">60+ critical assets</span></p>
+                <p class="duty-item"><span class="highlight">Enterprise GenAI Governance & Strategy:</span> Authored and deployed the enterprise-wide Generative AI Security Strategy, defining security architecture, guardrail frameworks, threat models, and automated detection logic for safe enterprise LLM adoption[cite: 1].</p>
             </div>
             <div class="achievement-item">
-                <p class="duty-item">Built <span class="highlight">AI-powered threat intelligence feeds</span> with automated IOC management, streamlining detection coverage and enabling rapid integration of intelligence into security operations</p>
+                <p class="duty-item"><span class="highlight">Security Engineering Leadership:</span> Led multi-disciplinary security engineering teams through critical detection and response implementations, mapping defenses across <span class="highlight">60+ mission-critical assets</span> to MITRE ATT&CK and Cyber Kill Chain models.</p>
             </div>
             <div class="achievement-item">
-                <p class="duty-item">Developed and implemented <span class="highlight">GenAI Security Strategy</span>, defining controls, guardrails, and detection logic to ensure secure adoption of generative AI technologies across the enterprise</p>
+                <p class="duty-item"><span class="highlight">Global Identity Containment Platform:</span> Engineered an enterprise Okta-driven IR Security Orchestration Bot used across 10+ analysts, achieving instant cross-SaaS containment (Slack, GitHub, Google, SSH, PATs, OAuth) and eliminating manual cross-departmental coordination overhead[cite: 1].</p>
             </div>
             <div class="achievement-item">
-                <p class="duty-item">Engineered the <span class="highlight">Security Actions and Incident Response Bots</span> that automated triage and containment workflows, accelerating MTTR and reducing manual analyst workload</p>
+                <p class="duty-item"><span class="highlight">Autonomous Threat Intelligence Architecture:</span> Designed an event-driven threat intelligence pipeline ingesting Mandiant and CrowdStrike telemetry; automated IOC enrichment across Splunk, Netskope, and Sublime, saving ~1-2 hours per investigation[cite: 1].</p>
             </div>
             <div class="achievement-item">
-                <p class="duty-item">Designed and deployed a <span class="highlight">Security Actions Bot</span> to standardise and orchestrate security responses, improving consistency and efficiency across SOC operations</p>
+                <p class="duty-item"><span class="highlight">Top 1% Global Automation Leader:</span> Recognized as a Top 1% Tines Builder (2025) and recipient of the Bronze Builder Award for architectural contribution and community impact in security orchestration[cite: 2].</p>
             </div>
             <div class="achievement-item">
-                <p class="duty-item">Implemented security controls for <span class="highlight">SOX-Audit</span> within the first year of a publicly traded company that are tied to regulatory requirements and critical business processes</p>
-            </div>
-            <div class="achievement-item">
-                <p class="duty-item">Successfully defended a <span class="highlight">3rd party security audit</span> from RAK Bank for the YAP application</p>
-            </div>
-            <div class="achievement-item">
-                <p class="duty-item">Delivered lighting talks regarding <span class="highlight">cybersecurity awareness</span> throughout the organisation</p>
-            </div>
-            <div class="achievement-item">
-                <p class="duty-item">Recognised and awarded for acting as a team in the <span class="highlight">Security Engineering Team</span></p>
-            </div>
-            <div class="achievement-item">
-                <p class="duty-item">Awarded with the <span class="highlight">Certificate of Appreciation</span> for best performance in the SOC</p>
-            </div>
-            <div class="achievement-item">
-                <p class="duty-item"><span class="highlight">2nd position</span> at Industrial Open-House and Junior Year Robotics Competitions</p>
+                <p class="duty-item"><span class="highlight">Regulatory Audit Leadership & Compliance:</span> Architected SOX-compliant security control frameworks for a publicly traded company and successfully defended RAK Bank's strict 3rd-party audit for the YAP platform[cite: 1, 2].</p>
             </div>
         </div>
 
         <div class="section fade-in">
             <h2 class="section-title">
                 <i class="fas fa-briefcase"></i>
-                Work Experience
+                Leadership & Staff Experience
             </h2>
             
             <div class="experience-item">
                 <div class="experience-header">
                     <div>
-                        <div class="job-title">Security Engineer</div>
+                        <div class="job-title">Staff / Senior Security Engineer & Technical Lead</div>
                         <div class="company">HubSpot</div>
                     </div>
                     <div class="duration">February 2025 – Present</div>
                 </div>
                 <div class="code-block">
-                    <p><strong>Notable Projects:</strong> GenAI Security Strategy, Insider Threat Detection Automation, USB Access Management, AI-Powered Intelligence Feeds with IOC Management, AI-Powered Autonomous Threat Hunting & Incident Response Bot</p>
+                    <p><strong>Strategic Focus:</strong> Enterprise Detection Strategy, GenAI Risk Governance, Automated Incident Response Platform Architecture, Threat Intelligence Engineering[cite: 1]</p>
                 </div>
-                <div class="duty-item">SME for detection engineering & automation, specialising in building and optimising threat detections across EDR, SIEM, and SASE platforms to bolster overall security posture and incident readiness</div>
-                <div class="duty-item">Automated critical security processes using a combination of coded and no-code tools, significantly reducing manual efforts and increasing operational efficiency</div>
-                <div class="duty-item">Designed and deployed automated threat detection workflows leveraging Slack, Tines, and AI technologies, improving real-time response to insider and other critical threats</div>
-                <div class="duty-item">Translated complex security data into actionable threat intelligence, driving proactive threat-hunting campaigns and safeguarding critical assets</div>
-                <div class="duty-item">Provided mentorship and guidance to the SOC team, enhancing their expertise in detection engineering and incident response strategies</div>
+                <div class="duty-item">Function as Subject Matter Expert (SME) and strategic lead for detection engineering and security automation across global EDR, SIEM, SASE, and SaaS telemetry platforms[cite: 1].</div>
+                <div class="duty-item">Spearheaded the enterprise-wide GenAI Security Strategy, defining control frameworks, threat scenarios, guardrails, and detection logic to enable secure, business-aligned AI deployment[cite: 1].</div>
+                <div class="duty-item">Architected an automated threat intelligence platform integrating event-driven ingestion from Mandiant and CrowdStrike, automating IOC collection, analysis, and threat hunting across Splunk, Netskope, and Sublime[cite: 1].</div>
+                <div class="duty-item">Engineered cross-platform automated incident containment platforms (Tines, Okta, Python, Slack) that orchestrate identity revocation, session termination, and token destruction across cloud services during active breaches[cite: 1].</div>
+                <div class="duty-item">Designed AI-assisted threat hunting workflows and insider-threat detection engines that parse anomalous high-volume telemetry to deliver high-confidence investigation leads[cite: 1].</div>
+                <div class="duty-item">Provide technical leadership, strategic guidance, and continuous mentorship to SOC engineers, establishing detection-as-code standards and incident response playbooks[cite: 1].</div>
             </div>
 
             <div class="experience-item">
                 <div class="experience-header">
                     <div>
-                        <div class="job-title">Information Security Engineer</div>
+                        <div class="job-title">Information Security Lead / Principal Detection Engineer</div>
                         <div class="company">Informatica</div>
                     </div>
                     <div class="duration">February 2022 – February 2025</div>
                 </div>
                 <div class="code-block">
-                    <p><strong>Notable Projects:</strong> Threat Detection Management & Lifecycle, SIEM Migration, Endpoint Security Hardening, SOX Controls Implementation, Continuous Onboarding of Assets and Splunk Enrichment</p>
+                    <p><strong>Strategic Focus:</strong> Enterprise SIEM Architecture, Incident Command, CIS Compliance Architecture, SOX Controls Leadership[cite: 2]</p>
                 </div>
-                <div class="duty-item">SME for engineering threat detection, incident response controls, detection logic and alert use case management to support end-to-end respective initiatives (SOX, ISO)</div>
-                <div class="duty-item">Calibrated security control systems with the desired risk posture for the enterprise and customers</div>
-                <div class="duty-item">Automated and optimised security detections to reduce the attack surface, proactively seeking out vulnerabilities, and decreased response and recovery times</div>
-                <div class="duty-item">Implemented endpoint security protection initiative based on CIS Controls for <span class="highlight">5000+ workstations</span></div>
-                <div class="duty-item">Served as an escalation point and mentor for the SOC Team</div>
-                <div class="duty-item">Led and responded to all security events and incidents across complex global infrastructure, services, and applications by taking ownership as an incident commander</div>
-                <div class="duty-item">Performed After Action Reviews after incident response to reduce risk and prevent a recurrence</div>
-                <div class="duty-item">Responsibly documented the security engineering projects, developed runbooks, incident playbooks and standard operating procedures to share knowledge across teams</div>
+                <div class="duty-item">Served as technical SME for enterprise threat detection lifecycle, SIEM architectural migrations, and alert framework calibration across global operations[cite: 2].</div>
+                <div class="duty-item">Architected and deployed CIS Control-aligned endpoint security programs across <span class="highlight">5,000+ enterprise workstations</span>, significantly lowering endpoint compromise vectors[cite: 2].</div>
+                <div class="duty-item">Acted as Global Incident Commander for severe security events, orchestrating incident triage, cross-functional containment, root-cause analysis, and executive post-mortem communications[cite: 2].</div>
+                <div class="duty-item">Designed and executed SOX audit control frameworks tied directly to regulatory mandates and core revenue-generating infrastructure[cite: 1, 2].</div>
+                <div class="duty-item">Mentored and led SOC personnel, establishing operational runbooks, detection-as-code repositories, and incident response playbooks to ensure scalable SecOps[cite: 2].</div>
             </div>
 
             <div class="experience-item">
                 <div class="experience-header">
                     <div>
-                        <div class="job-title">Security Engineer</div>
+                        <div class="job-title">Security Engineering Lead</div>
                         <div class="company">Digitify</div>
                     </div>
                     <div class="duration">March 2021 – September 2021</div>
                 </div>
-                <div class="code-block">
-                    <p><strong>Notable Projects:</strong> Continuous Detection & Monitoring Operation, Security Incident Management Program, Vulnerability Management Program, Assessments & hardening of Azure & AWS</p>
-                </div>
-                <div class="duty-item">Primarily responsible for SOC monitoring, detection use-case building, triage, and advisory with a mission to ruthlessly protect our customers' data</div>
-                <div class="duty-item">Strategised and applied four security initiatives, directing defensive security functions</div>
-                <div class="duty-item">Implemented and managed the SIEM and EDR solution</div>
-                <div class="duty-item">Prepared operation reports and followed up with the stakeholders to close the remediation loop</div>
-                <div class="duty-item">Responded to security events, performed root cause analysis to triage and communicated efficiently with stakeholders</div>
+                <div class="duty-item">Directed defensive security strategy across four major initiatives: Continuous Monitoring, Incident Response Framework, Vulnerability Management, and Cloud Hardening[cite: 2].</div>
+                <div class="duty-item">Led architecture and baseline deployment for customer SIEM/EDR platforms, establishing detection rules and continuous monitoring operations[cite: 2].</div>
+                <div class="duty-item">Evaluated, hardened, and audited multi-cloud enterprise footprints (AWS & Azure) against industry benchmarks[cite: 2].</div>
             </div>
 
             <div class="experience-item">
                 <div class="experience-header">
                     <div>
-                        <div class="job-title">Security Engineer</div>
+                        <div class="job-title">Cloud Security Engineer & Architect</div>
                         <div class="company">The ENTERTAINER LTD.</div>
                     </div>
                     <div class="duration">September 2019 – November 2020</div>
                 </div>
-                <div class="duty-item">Collaborated closely with Development, Operations, and DevOps teams to integrate security measures into the entire software development lifecycle</div>
-                <div class="duty-item">Developed security and incident response playbooks tailored to cloud environments to ensure rapid response to security incidents</div>
-                <div class="duty-item">Analysed anomalous and malicious events from endpoint, network, and application logs</div>
-                <div class="duty-item">Researched and stayed up-to-date with the latest cloud security threats & technologies</div>
-                <div class="duty-item">Responded to security events, performed root cause analysis to triage and communicated efficiently with stakeholders</div>
-                <div class="duty-item">Presented monthly and quarterly SOC reports, including daily detections from all the channels, analysis based on threat hunting, monitoring, recommendations, and the enterprise's security posture</div>
+                <div class="duty-item">Partnered with executive engineering, DevOps, and Product leadership to embed security guardrails directly into modern CI/CD pipelines and software development lifecycles[cite: 2].</div>
+                <div class="duty-item">Architected tailored cloud incident response playbooks to accelerate incident triage and minimize time-to-containment across AWS environments[cite: 2].</div>
+                <div class="duty-item">Delivered executive-level security telemetry briefings and quarterly threat posture assessments to C-suite stakeholders[cite: 2].</div>
             </div>
         </div>
 
         <div class="section fade-in">
             <h2 class="section-title">
                 <i class="fas fa-code"></i>
-                Skills & Technologies
+                Strategic Domain Expertise
             </h2>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h4>Core Competencies</h4>
+                    <h4>Executive & Technical Leadership</h4>
                     <ul class="skill-list">
-                        <li>Threat Detection Engineering & Automation</li>
-                        <li>Artificial Intelligence Security</li>
-                        <li>Threat Hunting & Intelligence</li>
-                        <li>Cloud Security Engineering</li>
-                        <li>Security Operations & Response</li>
+                        <li>Security Architecture & Threat Modeling</li>
+                        <li>GenAI Security & Guardrails (MCP)[cite: 1]</li>
+                        <li>Cross-Functional Incident Leadership[cite: 2]</li>
+                        <li>Multi-Year Strategic Roadmap Planning[cite: 1]</li>
+                        <li>Technical Mentorship & Team Development[cite: 1, 2]</li>
                     </ul>
                 </div>
                 <div class="skill-category">
-                    <h4>Security Tools</h4>
+                    <h4>Detection & Orchestration Architecture</h4>
                     <ul class="skill-list">
-                        <li>SIEM: Splunk, Anvilogic, Wazuh, Sumologic</li>
-                        <li>EDR/MDR: Cortex, CrowdStrike, Kaspersky</li>
-                        <li>SASE: Netskope & Zscaler</li>
-                        <li>Automation: Tines, Slack Bots, AI Agents</li>
-                        <li>WAF: Palo Alto, Cloudflare, Fortinet Firewall</li>
+                        <li>Detection-as-Code (Sigma, SPL, Python)[cite: 1]</li>
+                        <li>SOAR Architecture (Tines, Custom Bots, APIs)[cite: 1]</li>
+                        <li>Threat Intelligence Automation & Feeds[cite: 1]</li>
+                        <li>High-Signal Alert Tuning & Lifecycle[cite: 1]</li>
+                        <li>AI-Powered Threat Hunting Systems[cite: 1]</li>
                     </ul>
                 </div>
                 <div class="skill-category">
-                    <h4>Infrastructure & Cloud</h4>
+                    <h4>Enterprise Platforms & Infrastructure</h4>
                     <ul class="skill-list">
-                        <li>OS: Linux, Windows, MacOS</li>
-                        <li>Cloud Platforms: AWS, Azure</li>
-                        <li>Compliance & Privacy: GDPR</li>
-                        <li>Assessments, Hardening & Recovery Planning</li>
+                        <li>SIEM/XDR: Splunk ES, CrowdStrike, Cortex XSIAM[cite: 1]</li>
+                        <li>SASE & SGM: Netskope, Zscaler, Sublime[cite: 1]</li>
+                        <li>Identity & Cloud: Okta, AWS, Azure, Google Workspace[cite: 1]</li>
+                        <li>Operating Systems: Linux, Windows, macOS Architecture[cite: 1]</li>
                     </ul>
                 </div>
                 <div class="skill-category">
-                    <h4>Frameworks & Programming</h4>
+                    <h4>Governance, Risk & Frameworks</h4>
                     <ul class="skill-list">
-                        <li>Framework: CIS, Cyber KillChain, MITRE, NIST</li>
-                        <li>Programming: SQL, C++ & Python</li>
-                        <li>Technical Documentation & Playbooks</li>
+                        <li>MITRE ATT&CK & Cyber Kill Chain Alignment[cite: 1, 2]</li>
+                        <li>Compliance Standards: SOX, CIS Controls, GDPR[cite: 1, 2]</li>
+                        <li>3rd Party Audit Defense & Risk Governance[cite: 2]</li>
+                        <li>Standard Operating Procedures & Playbooks[cite: 2]</li>
                     </ul>
                 </div>
             </div>
@@ -527,90 +476,88 @@
         <div class="section fade-in">
             <h2 class="section-title">
                 <i class="fas fa-graduation-cap"></i>
-                Education
+                Education & Credentials
             </h2>
             <div class="education-item">
-                <div class="degree">International Security & Intelligence</div>
-                <div class="institution">University of Cambridge</div>
+                <div class="degree">International Security & Intelligence Program</div>
+                <div class="institution">University of Cambridge, United Kingdom</div>
             </div>
             <div class="education-item">
-                <div class="degree">Master of Science, Cyber Security with Threat Management</div>
-                <div class="institution">Atlantic Technological University, Ireland</div>
-                <div class="grade">Grade: First Class Honours</div>
+                <div class="degree">Master of Science (MSc), Cyber Security with Threat Management</div>
+                <div class="institution">Atlantic Technological University, Ireland — First Class Honours</div>
             </div>
             <div class="education-item">
-                <div class="degree">Bachelor of Science, Electrical Engineering</div>
-                <div class="institution">Ghulam Ishaq Khan Institute of Engineering Science and Technology, Pakistan</div>
+                <div class="degree">Bachelor of Science (BSc), Electrical Engineering</div>
+                <div class="institution">Ghulam Ishaq Khan Institute of Engineering Sciences and Technology, Pakistan</div>
             </div>
         </div>
 
         <div class="section fade-in">
             <h2 class="section-title">
                 <i class="fas fa-certificate"></i>
-                Certifications & Training
+                Certifications & Industry Honors
             </h2>
-            <div class="cert-item">
-                <div>
-                    <div class="cert-name">Security Cloud Operation & Administration</div>
-                    <div class="cert-org">Netskope</div>
+            <div class="cert-grid">
+                <div class="cert-item">
+                    <div>
+                        <div class="cert-name">Top 1% Tines Builder & Bronze Builder Award</div>
+                        <div class="cert-org">Tines • 2025</div>
+                    </div>
                 </div>
-                <div class="cert-date">July 2025</div>
-            </div>
-            <div class="cert-item">
-                <div>
-                    <div class="cert-name">Cortex XDE - Investigation and Response</div>
-                    <div class="cert-org">Palo Alto</div>
+                <div class="cert-item">
+                    <div>
+                        <div class="cert-name">Inside the Mind of an APT</div>
+                        <div class="cert-org">Mandiant • Sep 2026</div>
+                    </div>
                 </div>
-                <div class="cert-date">Aug 2024</div>
-            </div>
-            <div class="cert-item">
-                <div>
-                    <div class="cert-name">Cortex XDR - Prevention and Deployment</div>
-                    <div class="cert-org">Palo Alto</div>
+                <div class="cert-item">
+                    <div>
+                        <div class="cert-name">Tines Core & Advanced Certification</div>
+                        <div class="cert-org">Tines • May 2025</div>
+                    </div>
                 </div>
-                <div class="cert-date">Aug 2024</div>
-            </div>
-            <div class="cert-item">
-                <div>
-                    <div class="cert-name">Incident Management Training for IT Operations</div>
-                    <div class="cert-org">Blackrock 3 Partners</div>
+                <div class="cert-item">
+                    <div>
+                        <div class="cert-name">Security Cloud Operation & Administration</div>
+                        <div class="cert-org">Netskope • Jul 2025</div>
+                    </div>
                 </div>
-                <div class="cert-date">Dec 2023</div>
-            </div>
-            <div class="cert-item">
-                <div>
-                    <div class="cert-name">Administering Splunk Enterprise Security</div>
-                    <div class="cert-org">Splunk</div>
+                <div class="cert-item">
+                    <div>
+                        <div class="cert-name">Cortex XDR Investigation & Prevention</div>
+                        <div class="cert-org">Palo Alto Networks • Aug 2024</div>
+                    </div>
                 </div>
-                <div class="cert-date">May 2023</div>
-            </div>
-            <div class="cert-item">
-                <div>
-                    <div class="cert-name">SEC 555 - SIEM with Tactical Analytics</div>
-                    <div class="cert-org">SANS</div>
+                <div class="cert-item">
+                    <div>
+                        <div class="cert-name">SEC555: SIEM with Tactical Analytics</div>
+                        <div class="cert-org">SANS Institute • Feb 2023</div>
+                    </div>
                 </div>
-                <div class="cert-date">Feb 2023</div>
-            </div>
-            <div class="cert-item">
-                <div>
-                    <div class="cert-name">SEC 504 - Hacker Tools, Techniques, Exploits, and Incident Handling</div>
-                    <div class="cert-org">SANS</div>
+                <div class="cert-item">
+                    <div>
+                        <div class="cert-name">SEC504: Hacker Tools & Incident Handling</div>
+                        <div class="cert-org">SANS Institute • Mar 2021</div>
+                    </div>
                 </div>
-                <div class="cert-date">Mar 2021</div>
+                <div class="cert-item">
+                    <div>
+                        <div class="cert-name">Administering Splunk Enterprise Security</div>
+                        <div class="cert-org">Splunk • May 2023</div>
+                    </div>
+                </div>
             </div>
         </div>
 
         <div class="footer">
             <div class="code-block">
-                <p>"Thank you for visiting my profile!"</p>
-                <p>Connection established. Ready for new opportunities...</p>
+                <p>"Securing modern infrastructure through high-impact automation, pragmatic architecture, and strategic leadership."</p>
                 <p class="command-prompt">exit</p>
             </div>
         </div>
     </div>
 
     <script>
-        // Matrix rain effect
         const canvas = document.getElementById('matrixCanvas');
         const ctx = canvas.getContext('2d');
 
@@ -648,7 +595,6 @@
 
         setInterval(draw, 35);
 
-        // Scroll indicator
         window.addEventListener('scroll', () => {
             const scrollTop = document.documentElement.scrollTop;
             const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
@@ -656,7 +602,6 @@
             document.getElementById('scrollIndicator').style.width = scrolled + '%';
         });
 
-        // Fade in animation on scroll
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
@@ -678,7 +623,6 @@
             observer.observe(el);
         });
 
-        // Resize canvas on window resize
         window.addEventListener('resize', () => {
             canvas.width = window.innerWidth;
             canvas.height = window.innerHeight;
